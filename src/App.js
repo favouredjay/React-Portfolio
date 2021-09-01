@@ -8,6 +8,7 @@ import {SiJavascript} from "react-icons/si";
 import  {AiOutlineDoubleRight} from  "react-icons/ai";
 import {DiReact} from "react-icons/di";
 import {SiStorybook} from "react-icons/si"
+import {MdChatBubbleOutline} from "react-icons/md"
  
 
 const App = ()=> {
@@ -46,7 +47,7 @@ and a Medical Doctor.</h1>
     <br></br>
   
     <div className ="container">
-    <div className = "one-column"className ="first-project" style={{ borderLeft: '8px solid #CCA9F4', width: '40%', height:'150px', marginLeft:'25%', textAlign:'justify' }}>
+    <div className = "one-column" style={{ borderLeft: '8px solid #CCA9F4', height:'230px', backgroundColor: '#1C2A34', borderRadius: '10px', boxShadow: '#111A20', padding: '15px'}}>
     <header>Yawnech</header>
     <h6 style = {{fontWeight:'lighter', fontSize: '14px'}}>An online co-working community for Indie hackers, enterpreneurs, and founders Chat live with app developers, designers and mentors. Access video course and tutorials. </h6>
     <Button
@@ -59,10 +60,11 @@ and a Medical Doctor.</h1>
     
     </div>
     <br></br>
-    <div style = {{ borderLeft: '8px solid #81F59B', width: '20%', height:'150px',marginLeft:'25%', textAlign:'justify' }}>
+    {/* <div className = "columns"> */}
+    <div classname = "two" style={{ borderLeft: '8px solid #81F59B', height:'230px', backgroundColor: '#1C2A34', borderRadius: '10px', boxShadow: '#111A20', padding: '15px' }}>
     <header
      > Stockstream.tv </header>
-     <h6 style = {{fontWeight:'lighter', fontSize: '12px'}}>On a mission to democratize investing knowledge. My partner and I bootstrapped this company with zero funding."</h6>
+     <h6 style = {{fontWeight:'lighter', fontSize: '14px'}}>On a mission to democratize investing knowledge. My partner and I bootstrapped this company with zero funding."</h6>
      <Button
     title = "Button"
     backgroundColor = "#1A2832"
@@ -71,15 +73,43 @@ and a Medical Doctor.</h1>
     height = "10%"
     borderMargin = "solid"/>
      </div>
-    <div className="three-column"></div>
-
+    <div className = "three" style={{ borderLeft: '8px solid #D9534D', height:'230px', backgroundColor: '#1C2A34', borderRadius: '10px', boxShadow: '#111A20', padding: '15px' }} >
+      <header>
+        All Turtles
+      </header>
+      <h6 style = {{fontWeight:'lighter', fontSize: '16px'}}>I lead web development full time at All Turtles, an AI startup studio.</h6>
+      <Button
+    title = "Button"
+    backgroundColor = "#1A2832"
+    color = "white"
+    borderRadius = "3px"
+    height = "10%"
+    borderMargin = "solid"/>
     </div>
-      
+    <br></br>
+   
+    
+</div>
+<h2 className = "work">What are you working on?</h2>
+    {/* </div> */}
+    <h4 style ={{ fontSize :"11px", textAlign : "center"}}>Let's have a Conversation! I'd love to hear about what you're<br></br> working on and find a way to work together.</h4>
+    {/* <p  > */}
+    <br></br>
+      <Button
+   logo={<MdChatBubbleOutline color="#111A20"/>}
+    backgroundColor = '#83F9A2'
+    height = "30px"
+    borderRadius = "5px"
+    title = "chat"
+    width = "5%"
+    color = '#111A20'
+    fontWeight = '800'
+    marginLeft = "47%"
+  
+  />
+  {/* </p> */}
 
-     
-      
-
-    </div>
+      </div>
   )
 }
 

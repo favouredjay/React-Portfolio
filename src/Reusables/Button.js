@@ -10,13 +10,18 @@ const Button = (props) => {
         font: props.font,
         border: props.border,
         marginTop: props.marginTop,
+        logo: props.logo,
+        marginLeft: props.marginLeft,
+        fontWeight: props.fontWeight,
 
         // title: props.title,
     }
     return (
         <div>
            <button style={btn}> 
+           <span>{props.logo}</span>
         {props.title}
+     
             </button> 
         </div>
     )
